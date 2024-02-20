@@ -1,0 +1,15 @@
+[
+  {
+    "username": "Jacob",
+    "password": "jabobdoe123",
+    "name": "Jacob Doe",
+    "email": "jacobdoe@gmail.com",
+    "isStudent": true
+  },
+  {
+    "username": "Kayley",
+    "password": "kayleyjosh",
+    "name": "Kayley Josh",
+    "email": "kayleyjoshuv@hotmail.com"
+  }
+]
