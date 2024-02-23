@@ -6,8 +6,8 @@ const savedItemsController = require('../controllers/savedItemsController');
 
 // GET route to fetch all saved items for a user
 router.get("/", savedItemsController.index);
-router.get('/:userId/saved-items', savedItemsController.getSavedItems);
-router.post('/:userId/saved-items', savedItemsController.addSavedItems);
+router.post("/", savedItemsController.addSavedItems);
+// router.post('/:userId/saved-items', savedItemsController.addSavedItems);
 
 // // // DELETE route to delete a saved item
 // router.delete('/saved-items/:itemId', savedItemsController.deleteSavedItem);

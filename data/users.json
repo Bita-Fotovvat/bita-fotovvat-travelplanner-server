@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "username": "Jacob",
     "password": "jabobdoe123",
     "name": "Jacob Doe",
@@ -7,6 +8,7 @@
     "isStudent": true
   },
   {
+    "id": 2,
     "username": "Kayley",
     "password": "kayleyjosh",
     "name": "Kayley Josh",
