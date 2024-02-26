@@ -4,13 +4,11 @@ const findOne = async (req, res) => {
     try {
       const usersFound = await knex("users")
         .where({ id: req.params.id });
-  
       if (usersFound.length === 0) {
         return res.status(404).json({
           message: `User with ID ${req.params.id} not found` 
         });
       }
-  
       const userData = usersFound[0];
       res.json(userData);
     } catch (error) {
@@ -19,9 +17,6 @@ const findOne = async (req, res) => {
       });
     }
   };
-
-
-//get saveditems for a specific user
   const savedFavs = async (req, res) => {
     try {
       const savedFavs = await knex("users")
@@ -36,7 +31,6 @@ const findOne = async (req, res) => {
     }
   };
   
-
   module.exports = {
     findOne,
     savedFavs,

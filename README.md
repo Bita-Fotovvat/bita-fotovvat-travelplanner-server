@@ -1,41 +1,20 @@
 # API DOCUMENTATION
 
-## POST /signup
-send `username`, `password` and `name` properties to create a user. <br/>
-<br/>
-`sample request body`
-```
-{
-    username: "sample@email.com",
-    password: "yourpassword",
-    name: "yourname"
-}
-```
-<br/>
+## Description
 
-## POST /login
-send a user's username and password to authenticate. The response will be a JWT.<br><br>
-`sample request body`
-```
-{
+This repository is the backend part of the travelplanner website.
 
-    username: "sample@email.com",
-    password: "yourpassword"
-}
-```
-<br>
+## Getting Started
+#### Dependencies
+- Node.js
+- Express
+- Knex
 
-## GET /profile
-an `authenticated endpoint``. The request to this endpoint must include an `Authorization` header with the authenticated user's bearer token.
-<br>
-<br>
-`sample response`
-```
-{
-    username: "user123",
-    name: "yourname",
-    iat: 123455,
-    address: "your address",
-    email: "youremail"
-}
-```
+#### Installation and starting the database
+- npm init
+- npm install knex mysql2 dotenv
+- npm i
+- create a db connection
+- add a .env file (get help from .env.sample file)
+
+#### We hope you enjoy this website!
